@@ -237,7 +237,7 @@ Profileviewcontroller
 #### Instead Use
 ```objective-c
 UIAlertViewDelegate
-UITableview
+UITableView
 ProfileViewController
 ```
 
@@ -245,6 +245,8 @@ ProfileViewController
 * A class must not exceed 200 lines of code. If it does, its time to refactor.
 * If you want to add any functionality to the existing code, add a new extension of that class instead of changing the current one.
 * Separate business logic completely, from controller code.
+* Try to keep your methods clean and simple. One method must perform only one funtion.
+* If methods or classes are getting complex, refactor your code.
 
 ### Credits
 
