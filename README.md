@@ -74,7 +74,7 @@ IBOutlet UIButton *CloseButton;
 
 #### Instead Use
 ```objective-c
-IBOutlet UIButton* closeButton;
+IBOutlet UIButton *closeButton;
 
 - (void)viewDidAppear:(BOOL)animated;
 ```
@@ -83,14 +83,14 @@ IBOutlet UIButton* closeButton;
 
 #### Avoid Using
 ```objective-c
-IBOutlet UIButton* close_button;
+IBOutlet UIButton *close_button;
 int amount_to_pay;
 int count1;
 ```
 
 #### Instead Use
 ```objective-c
-IBOutlet UIButton* closeButton;
+IBOutlet UIButton *closeButton;
 int amountToPay;
 int count;
 ```
