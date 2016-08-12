@@ -5,12 +5,12 @@
 This style guide covers basic coding conventions and best practices for Objective-C. 
 
 <br>
-Working with Swift? Here is out [guideline for Swift](https://github.com/Clustox/swift-style-guidelines)
+Working with Swift? Here is our [guideline for Swift](https://github.com/Clustox/swift-style-guidelines)
 
 - - - -
 ### Naming Conventions
 
-* Name of variable, method, protocols and classes must be clearly showing the functionality. Strictly avoid using ambiguous names.
+* Name of variable, method, protocols and classes must describe the functionality clearly so try to avoid ambiguous names.
 
 #### Avoid Using
 ```objective-c
@@ -95,9 +95,9 @@ int amountToPay;
 int count;
 ```
 
-### Defining Variable and Mthods
+### Defining Variable and Methods
 
-* While defining variable, asterisk must be attached to variable name instead of type.
+* While defining variable, asterisk must be attached to the variable name instead of type.
 
 #### Avoid Using
 ```objective-c
@@ -126,7 +126,7 @@ IBOutlet UIButton *closeButton;
 
 ### Spaces
 
-* Method braces and other braces (If/else, switch, for, while) shall be on same line as statement but ending braces shall be on next line.
+* Method braces and other braces (If/else, switch, for, while) shall be on the same line as statement but ending braces shall be on next line.
 * Avoid adding more than two vertical spaces between two methods.
 
 
@@ -156,7 +156,7 @@ IBOutlet UIButton *closeButton;
 
 * Dot syntax is a convenient wrapper around method calls. By using dot syntax, the property is still accessed or changed using getter and setter methods.
 
-* Dot-notation is preferred for getters setters as it makes code more concise. Bracket notation is preferred in all other instances.
+* Dot-notation is preferred for getters setters as it makes code more concise. Bracket notation is preferred in all other instances too.
 
 #### Avoid Using
 ```objective-c
@@ -215,13 +215,13 @@ void (^doSomeThing)(void) = ^{
 
 ### Dealloc
 
-* After launch of arc, dealloc is not implemented the same way as it used to be. But notification observers needs to be removed in dealloc. Similar deleagtes need to be unset in dealloc.
+* After launch of arc, dealloc is not implemented the same way as it was used to be. But we still need it with a little modifications such as notification observers are needed to be removed and similar deleagtes are needed to be unset in dealloc.
 
 ### Documentation
 
 * Code must be properly documented.
 * Changing a block of code must be documented so rest of the developers can see the reason for change.
-* Doing some task in an not recommended way needs to be properly documented.
+* Doing some task in a not recommended way needs to be properly documented.
 
 ### General Guidelines
 
@@ -241,11 +241,11 @@ UITableView
 ProfileViewController
 ```
 
-* Remove commented and unused code from project.
-* A class must not exceed 200 lines of code. If it does, its time to refactor.
+* Remove commented and unused code from the project.
+* A class must not exceed 200 lines of code. If it does, it's time to refactor.
 * If you want to add any functionality to the existing code, add a new extension of that class instead of changing the current one.
 * Separate business logic completely, from controller code.
-* Try to keep your methods clean and simple. One method must perform only one funtion.
+* Try to keep your methods clean and simple. One method must perform one funtion only.
 * If methods or classes are getting complex, refactor your code.
 
 ### Credits
