@@ -156,7 +156,7 @@ IBOutlet UIButton *closeButton;
 
 * Dot syntax is a convenient wrapper around method calls. By using dot syntax, the property is still accessed or changed using getter and setter methods.
 
-* Dot-notation is preferred for getters setters as it makes code more concise. Bracket notation is preferred in all other instances too.
+* Dot-notation is preferred for getters setters as it makes code more concise. Bracket notation is preferred in all other instances.
 
 #### Avoid Using
 ```objective-c
@@ -215,7 +215,7 @@ void (^doSomeThing)(void) = ^{
 
 ### Dealloc
 
-* After launch of arc, dealloc is not implemented the same way as it was used to be. But we still need it with a little modifications such as notification observers are needed to be removed and similar deleagtes are needed to be unset in dealloc.
+* After launch of arc, dealloc is not implemented the same way as it was used to be. But we still need it with a little modifications such as removal of notification observers is done in dealloc. Similarly delegates should be unset in dealloc.
 
 ### Documentation
 
